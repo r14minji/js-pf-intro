@@ -66,13 +66,20 @@ a {
         animation-duration: 3.5s, 1s, 1s;
         stroke-dasharray: 50000;
         stroke-dashoffset: 50000; }
-    #wrap .bg li:nth-of-type(2), #wrap .bg li:nth-of-type(3) {
-      background: #eee; }
-      #wrap .bg li:nth-of-type(2)::after, #wrap .bg li:nth-of-type(3)::after {
-        background: #101820; }
-      #wrap .bg li:nth-of-type(2) .bg_line .st0, #wrap .bg li:nth-of-type(3) .bg_line .st0 {
-        fill: #F2AA4C;
-        stroke: rgba(0, 0, 0, 0.5); }
+    #wrap .bg li:nth-of-type(2) {
+      background: #262223; }
+      #wrap .bg li:nth-of-type(2)::after {
+        display: none;
+        background: #DDC6B6; }
+    #wrap .bg li:nth-of-type(3) {
+      background: #343148; }
+      #wrap .bg li:nth-of-type(3)::after {
+        display: none;
+        background: #D7C49E; }
+    #wrap .bg li:nth-of-type(4) {
+      background: #02343F; }
+      #wrap .bg li:nth-of-type(4)::after {
+        background: #F0EDCC; }
   #wrap .swiper-wrapper {
     width: 100%;
     height: 100%; }
@@ -172,7 +179,7 @@ a {
         width: 32%;
         padding: 10px 20px;
         height: 100%;
-        background: #fbddbea2;
+        background: white;
         display: flex;
         flex-direction: column;
         justify-content: space-between; }
@@ -248,7 +255,7 @@ a {
         width: 32%;
         padding: 10px 20px;
         height: 100%;
-        background: white; }
+        background: #fafafa; }
         #wrap .swiper-wrapper .web .inner .part2 h1 {
           height: 100px;
           font: 700 36px/1 'Cinzel';

@@ -62,16 +62,26 @@ $linegold: #eebe7b;
 			}
 		}
 
-		&:nth-of-type(2), &:nth-of-type(3) {
-			background: #eee; 
-				&::after{background: $bg;}
-				.bg_line .st0{fill: $yellow; stroke: rgba(0,0,0,0.5);}
+		&:nth-of-type(2){
+			background: #262223; 
+				&::after{display: none; background: #DDC6B6;}
+				//.bg_line .st0{fill: $yellow; stroke: rgba(0,0,0,0.5);}
+		}
+		&:nth-of-type(3) {
+			background: #343148; 
+				&::after{display: none; background:#D7C49E;}
+				//.bg_line .st0{fill:  $gold; stroke: rgba(0,0,0,0.5);}
+		}
+		&:nth-of-type(4) {
+			background: #02343F; 
+				&::after{background:#F0EDCC;}
+				//.bg_line .st0{fill: $yellow; stroke: rgba(0,0,0,0.5);}
 		}
 	}
 
 	.swiper-wrapper {
 		width: 100%;
-		height: 100%; // opacity: 0; transition: 0.5s;
+		height: 100%; 
 
 		.swiper-slide {
 			width: 60vw;
@@ -142,7 +152,7 @@ $linegold: #eebe7b;
 			background: transparent;
 			.part1{
 				width: 32%; padding: 10px 20px;
-				height: 100%;  background: #fbddbea2; 
+				height: 100%;  background: rgb(255, 255, 255); 
 				display: flex; flex-direction: column; justify-content: space-between;
 				.txt{
 					width: 100%; 
@@ -184,7 +194,7 @@ $linegold: #eebe7b;
 			}
 			.part2{
 				width: 32%; padding: 10px 20px; height: 100%;
-				background: rgb(255, 255, 255);
+				background: rgb(250, 250, 250);
 				h1{
 					height: 100px; font: 700 36px/1 'Cinzel'; text-align: center; 
 					&.title {font-size: 30px;}
