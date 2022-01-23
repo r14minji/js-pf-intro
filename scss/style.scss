@@ -27,11 +27,21 @@ $linegold: #eebe7b;
 		transition: 1s;
 		background: $bg;
 
-		&.on {
-			opacity: 1;
+		//면처리
+		&::after{
+			content: ""; display: block;
+			position: absolute; left: 0; top: 0; 
+			width: 30%; height: 100vh;
+			background: $gold;
+			opacity: 0; transition: 0.5s;
 		}
 
+		&.on {
+			opacity: 1;
+			&::after{opacity: 1;}
+		}
 		&:nth-of-type(4) .bg_line{margin-left: 200px;}
+
 		.bg_line {
 			width: 30%; height: 100vh;
 			position: absolute;  top: 0; right: 0;
@@ -50,6 +60,12 @@ $linegold: #eebe7b;
 				stroke-dasharray: 50000;
 				stroke-dashoffset: 50000; 
 			}
+		}
+
+		&:nth-of-type(2), &:nth-of-type(3) {
+			background: #eee; 
+				&::after{background: $bg;}
+				.bg_line .st0{fill: $yellow; stroke: rgba(0,0,0,0.5);}
 		}
 	}
 
@@ -125,8 +141,8 @@ $linegold: #eebe7b;
 			display: flex; justify-content: space-between;
 			background: transparent;
 			.part1{
-				width: 32%; padding: 10px;
-				height: 100%;  background: rgb(255, 255, 255);
+				width: 32%; padding: 10px 20px;
+				height: 100%;  background: #fbddbea2; 
 				display: flex; flex-direction: column; justify-content: space-between;
 				.txt{
 					width: 100%; 
@@ -167,7 +183,7 @@ $linegold: #eebe7b;
 
 			}
 			.part2{
-				width: 32%; padding: 10px; height: 100%;
+				width: 32%; padding: 10px 20px; height: 100%;
 				background: rgb(255, 255, 255);
 				h1{
 					height: 100px; font: 700 36px/1 'Cinzel'; text-align: center; 
@@ -175,7 +191,7 @@ $linegold: #eebe7b;
 				}
 				p{font: 400 14px/1.6 'Noto Serif KR'; margin-bottom: 10px; }
 				ul{
-					margin-bottom: 20px;
+					margin-bottom: 30px;
 					li{
 						padding: 2px 0; font: 400 14px/1.6 'Noto Serif KR';
 						i{margin-right: 10px;}
@@ -193,7 +209,9 @@ $linegold: #eebe7b;
 							&.pf_bg1{background: #e6e2dd;}
 							&.pf_bg2{background: #303030;}
 							&.pf_bg3{background: #C1554E;}
-							&.bg4{background: #AA7F3D;}
+							&.pf_bg4{background: #D1AC8F;}
+							&.pf_bg5{background: #101820;}
+							&.pf_bg6{background: #821002;}
 						}
 					}
 				}
@@ -249,14 +267,6 @@ $linegold: #eebe7b;
 				font-weight: bold;
 			}
 		}
-	}
-
-	//면처리
-	&::after{
-		content: ""; display: block;
-		position: absolute; left: 0; top: 0; 
-		width: 30%; height: 100vh;
-		background: $gold;
 	}
 }
 

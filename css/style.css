@@ -30,8 +30,21 @@ a {
     opacity: 0;
     transition: 1s;
     background: #101820; }
+    #wrap .bg li::after {
+      content: "";
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 30%;
+      height: 100vh;
+      background: #aa7f3d;
+      opacity: 0;
+      transition: 0.5s; }
     #wrap .bg li.on {
       opacity: 1; }
+      #wrap .bg li.on::after {
+        opacity: 1; }
     #wrap .bg li:nth-of-type(4) .bg_line {
       margin-left: 200px; }
     #wrap .bg li .bg_line {
@@ -53,6 +66,13 @@ a {
         animation-duration: 3.5s, 1s, 1s;
         stroke-dasharray: 50000;
         stroke-dashoffset: 50000; }
+    #wrap .bg li:nth-of-type(2), #wrap .bg li:nth-of-type(3) {
+      background: #eee; }
+      #wrap .bg li:nth-of-type(2)::after, #wrap .bg li:nth-of-type(3)::after {
+        background: #101820; }
+      #wrap .bg li:nth-of-type(2) .bg_line .st0, #wrap .bg li:nth-of-type(3) .bg_line .st0 {
+        fill: #F2AA4C;
+        stroke: rgba(0, 0, 0, 0.5); }
   #wrap .swiper-wrapper {
     width: 100%;
     height: 100%; }
@@ -150,9 +170,9 @@ a {
       background: transparent; }
       #wrap .swiper-wrapper .web .inner .part1 {
         width: 32%;
-        padding: 10px;
+        padding: 10px 20px;
         height: 100%;
-        background: white;
+        background: #fbddbea2;
         display: flex;
         flex-direction: column;
         justify-content: space-between; }
@@ -226,7 +246,7 @@ a {
             object-fit: cover; }
       #wrap .swiper-wrapper .web .inner .part2 {
         width: 32%;
-        padding: 10px;
+        padding: 10px 20px;
         height: 100%;
         background: white; }
         #wrap .swiper-wrapper .web .inner .part2 h1 {
@@ -239,7 +259,7 @@ a {
           font: 400 14px/1.6 'Noto Serif KR';
           margin-bottom: 10px; }
         #wrap .swiper-wrapper .web .inner .part2 ul {
-          margin-bottom: 20px; }
+          margin-bottom: 30px; }
           #wrap .swiper-wrapper .web .inner .part2 ul li {
             padding: 2px 0;
             font: 400 14px/1.6 'Noto Serif KR'; }
@@ -274,8 +294,12 @@ a {
                 background: #303030; }
               #wrap .swiper-wrapper .web .inner .part2 .wrap .palette strong.pf_bg3 {
                 background: #C1554E; }
-              #wrap .swiper-wrapper .web .inner .part2 .wrap .palette strong.bg4 {
-                background: #AA7F3D; }
+              #wrap .swiper-wrapper .web .inner .part2 .wrap .palette strong.pf_bg4 {
+                background: #D1AC8F; }
+              #wrap .swiper-wrapper .web .inner .part2 .wrap .palette strong.pf_bg5 {
+                background: #101820; }
+              #wrap .swiper-wrapper .web .inner .part2 .wrap .palette strong.pf_bg6 {
+                background: #821002; }
         #wrap .swiper-wrapper .web .inner .part2 .guide {
           display: inline-block;
           padding: 5px 2px;
@@ -321,15 +345,6 @@ a {
       #wrap .swiper-pagination span.swiper-pagination-bullet-active {
         opacity: 1;
         font-weight: bold; }
-  #wrap::after {
-    content: "";
-    display: block;
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 30%;
-    height: 100vh;
-    background: #aa7f3d; }
 
 @keyframes dash {
   from {
