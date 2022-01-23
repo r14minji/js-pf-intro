@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Crete+Round&family=Nanum+Gothic:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Crete+Round&family=Noto+Serif+KR:wght@400;700&display=swap");
 * {
   margin: 0px;
   padding: 0px;
@@ -40,8 +40,7 @@ a {
       position: absolute;
       top: 0;
       right: 0;
-      padding-top: 70px;
-      background: rgba(255, 255, 255, 0.4); }
+      padding-top: 70px; }
       #wrap .bg li .bg_line .st0 {
         fill: #aa7f3d;
         stroke: #eebe7b;
@@ -58,15 +57,14 @@ a {
     width: 100%;
     height: 100%; }
     #wrap .swiper-wrapper .swiper-slide {
-      width: 60vw;
-      height: 70vh;
+      width: 65vw;
+      height: 80vh;
       position: relative;
-      top: 20vh;
+      top: 15vh;
       right: 15vw; }
       #wrap .swiper-wrapper .swiper-slide .inner {
         width: 100%;
         height: 100%;
-        border: 1px solid #fff;
         background: #fff;
         font: bold 30px/1 "Cinzel";
         color: #101820;
@@ -77,43 +75,68 @@ a {
         opacity: 1; }
     #wrap .swiper-wrapper .web .inner {
       display: flex;
-      justify-content: space-between; }
+      justify-content: space-between;
+      background: transparent; }
       #wrap .swiper-wrapper .web .inner .part1 {
-        background: white;
         width: 32%;
-        padding: 10px 10px 0px;
-        height: 100%; }
+        padding: 10px;
+        height: 100%;
+        background: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; }
         #wrap .swiper-wrapper .web .inner .part1 .txt {
-          width: 100%;
-          height: 30%;
-          font-size: 20px;
-          font-family: 'Nanum Gothic'; }
+          width: 100%; }
+          #wrap .swiper-wrapper .web .inner .part1 .txt strong {
+            height: 100px;
+            font: 700 20px/1 'Noto Serif KR';
+            display: block; }
+          #wrap .swiper-wrapper .web .inner .part1 .txt h1 {
+            padding: 5px 0;
+            font: 400 16px/1 'Noto Serif KR';
+            margin-bottom: 5px; }
+          #wrap .swiper-wrapper .web .inner .part1 .txt a {
+            display: inline-block;
+            padding: 5px 2px;
+            margin-bottom: 10px;
+            font: 700 14px/1 'Cinzel';
+            border-top: 2px solid #101820;
+            border-bottom: 2px solid #101820;
+            color: #101820; }
+          #wrap .swiper-wrapper .web .inner .part1 .txt ul li {
+            padding: 2px 0;
+            font: 400 14px/1.2 'Noto Serif KR'; }
+          #wrap .swiper-wrapper .web .inner .part1 .txt h2, #wrap .swiper-wrapper .web .inner .part1 .txt h3 {
+            padding: 5px 0;
+            font: 700 16px/1 'Noto Serif KR';
+            margin-bottom: 10px; }
+          #wrap .swiper-wrapper .web .inner .part1 .txt p {
+            padding: 5px 0;
+            font: 400 14px/1 'Noto Serif KR'; }
+          #wrap .swiper-wrapper .web .inner .part1 .txt span {
+            padding: 5px 0;
+            font: 400 14px/1 'Noto Serif KR'; }
         #wrap .swiper-wrapper .web .inner .part1 .pic {
           width: 100%;
-          height: 70%;
+          height: auto;
           overflow: auto; }
           #wrap .swiper-wrapper .web .inner .part1 .pic img {
             width: 100%;
             object-fit: cover; }
       #wrap .swiper-wrapper .web .inner .part2 {
         width: 32%;
-        overflow: auto;
-        background: white; }
-      #wrap .swiper-wrapper .web .inner .part3 {
-        width: 32%;
-        padding: 10px 10px 0px;
+        padding: 10px;
         height: 100%;
         background: white; }
-        #wrap .swiper-wrapper .web .inner .part3 .txt {
-          width: 100%;
-          height: 30%; }
-        #wrap .swiper-wrapper .web .inner .part3 .pic {
-          width: 100%;
-          height: 70%;
-          overflow: auto; }
-          #wrap .swiper-wrapper .web .inner .part3 .pic img {
-            width: 100%;
-            object-fit: cover; }
+        #wrap .swiper-wrapper .web .inner .part2 h1 {
+          height: 100px;
+          font: 700 36px/1 'Cinzel';
+          text-align: center; }
+        #wrap .swiper-wrapper .web .inner .part2 h1.title {
+          font-size: 30px; }
+        #wrap .swiper-wrapper .web .inner .part2 p {
+          padding: 5px 0;
+          font: 400 14px/1 'Noto Serif KR'; }
   #wrap .swiper-button-next {
     top: auto;
     bottom: 5vh;
@@ -134,7 +157,7 @@ a {
     left: auto;
     width: 60vw;
     right: 0;
-    top: 5vh; }
+    top: 3vh; }
     #wrap .swiper-pagination span {
       color: #F2AA4C;
       width: auto;
@@ -144,10 +167,20 @@ a {
       padding: 20px 0;
       margin-left: 60px;
       opacity: 0.7;
-      font-family: 'Cinzel'; }
+      font-family: 'Cinzel';
+      font-size: 18px; }
       #wrap .swiper-pagination span.swiper-pagination-bullet-active {
         opacity: 1;
         font-weight: bold; }
+  #wrap::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 30%;
+    height: 100vh;
+    background: #aa7f3d; }
 
 @keyframes dash {
   from {
