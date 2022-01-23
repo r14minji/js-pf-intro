@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Crete+Round&family=Nanum+Gothic:wght@400;700&display=swap");
 * {
   margin: 0px;
   padding: 0px;
@@ -27,31 +28,45 @@ a {
     background-position: center;
     background-size: cover;
     opacity: 0;
-    transition: 1s; }
+    transition: 1s;
+    background: #101820; }
     #wrap .bg li.on {
       opacity: 1; }
-    #wrap .bg li:nth-of-type(1) {
-      background-image: url(../img/bg1.jpg); }
-    #wrap .bg li:nth-of-type(2) {
-      background-image: url(../img/bg2.jpg); }
-    #wrap .bg li:nth-of-type(3) {
-      background-image: url(../img/bg3.jpg); }
-    #wrap .bg li:nth-of-type(4) {
-      background-image: url(../img/bg4.jpg); }
+    #wrap .bg li:nth-of-type(1) .test {
+      width: 30%;
+      height: 100vh;
+      position: absolute;
+      top: 0;
+      right: 0;
+      background: rgba(0, 0, 0, 0.2); }
+      #wrap .bg li:nth-of-type(1) .test .st0 {
+        fill: #aa7f3d;
+        stroke-width: 10px;
+        stroke: #eebe7b;
+        animation-name: DrawLine, FadeStroke, FillIn;
+        fill-opacity: 0;
+        animation-timing-function: ease-in-out;
+        animation-fill-mode: forwards; }
+    #wrap .bg li:nth-of-type(1) .test1 {
+      stroke-dasharray: 24200;
+      stroke-dashoffset: 24200;
+      animation-delay: 1s, 3.5s, 3.5s;
+      animation-duration: 3.5s, 1s, 1s; }
   #wrap .swiper-wrapper {
     width: 100%;
     height: 100%; }
     #wrap .swiper-wrapper .swiper-slide {
       width: 60vw;
-      height: 60vh;
+      height: 70vh;
       position: relative;
-      top: 20vh; }
+      top: 20vh;
+      right: 15vw; }
       #wrap .swiper-wrapper .swiper-slide .inner {
         width: 100%;
         height: 100%;
         border: 1px solid #fff;
-        background: rgba(255, 255, 255, 0.5);
-        padding: 60px;
+        background: rgba(255, 255, 255, 0.8);
+        padding: 20px;
         font: bold 50px/1 "lato";
         color: #999;
         backdrop-filter: blur(10px);
@@ -59,6 +74,23 @@ a {
         transition: opacity 1s; }
       #wrap .swiper-wrapper .swiper-slide.swiper-slide-active .inner {
         opacity: 1; }
+    #wrap .swiper-wrapper .web .inner {
+      display: flex;
+      justify-content: space-between; }
+      #wrap .swiper-wrapper .web .inner .part_txt {
+        width: 20%;
+        padding: 0 10px;
+        border: 1px solid red; }
+      #wrap .swiper-wrapper .web .inner .part_img {
+        width: 40%;
+        overflow: auto; }
+        #wrap .swiper-wrapper .web .inner .part_img img {
+          width: 100%;
+          object-fit: cover; }
+      #wrap .swiper-wrapper .web .inner .part_title {
+        width: 40%;
+        padding: 0 10px;
+        border: 1px solid green; }
   #wrap .swiper-button-next {
     top: auto;
     bottom: 5vh;
@@ -77,19 +109,70 @@ a {
   #wrap .swiper-pagination {
     position: absolute;
     left: auto;
-    width: auto;
-    height: 50px;
-    right: 10vw;
-    top: 10vh; }
+    width: 60vw;
+    right: 0;
+    top: 5vh; }
     #wrap .swiper-pagination span {
+      color: #F2AA4C;
       width: auto;
       height: auto;
       background: transparent;
       border-radius: 0px;
+      padding: 20px 0;
       margin-left: 60px;
       opacity: 0.7; }
       #wrap .swiper-pagination span.swiper-pagination-bullet-active {
         opacity: 1;
         font-weight: bold; }
+
+.test {
+  width: 30%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.2); }
+  .test .st0 {
+    fill: #aa7f3d;
+    stroke-width: 10px;
+    stroke: #eebe7b;
+    animation-name: DrawLine, FadeStroke, FillIn;
+    fill-opacity: 0;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards; }
+
+.test1 {
+  stroke-dasharray: 24200;
+  stroke-dashoffset: 24200;
+  animation-delay: 1s, 3.5s, 3.5s;
+  animation-duration: 3.5s, 1s, 1s; }
+
+.test2 {
+  animation-delay: 1s, 3.5s, 3.5s;
+  animation-duration: 3.5s, 1s, 1s;
+  stroke-dashArray: 60000;
+  stroke-dashoffset: 60000; }
+
+.test3 {
+  animation-duration: 2s;
+  stroke-dashArray: 10;
+  stroke-dashoffset: 10; }
+
+@keyframes dash {
+  from {
+    stroke-dashoffset: 1000; }
+  to {
+    stroke-dashoffset: 0; } }
+@keyframes DrawLine {
+  to {
+    stroke-dashoffset: 0; } }
+@keyframes FadeStroke {
+  to {
+    stroke-opacity: 0; } }
+@keyframes FillIn {
+  from {
+    fill-opacity: 0; }
+  to {
+    fill-opacity: 1; } }
 
 /*# sourceMappingURL=style.css.map */

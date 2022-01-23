@@ -1,10 +1,10 @@
-const menu = ["Company", "About", "Information", "News"];
+const menu = ["ABOUT", "WEB:REACT", "WEB:JS", "CONTACT"];
 
 const swiper = new Swiper("#wrap", {
     loop: true,
     slidesPerView: "auto",
     centeredSlides: true,
-    spaceBetween: 50,
+    spaceBetween: 700,
     mousewheel: true,
 
     navigation: {

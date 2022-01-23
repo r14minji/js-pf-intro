@@ -1,110 +1,229 @@
 @charset "utf-8";
 @import "reset";
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Crete+Round&family=Nanum+Gothic:wght@400;700&display=swap');
 
 #wrap {
-    width: 100%;
-    height: 100vh;
-    position: relative;
-    background: #fff;
-    overflow: hidden;
+	width: 100%;
+	height: 100vh;
+	position: relative;
+	background: #fff;
+	overflow: hidden;
 
-    .bg li {
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        top: 0px;
-        left: 0px;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        opacity: 0;
-        transition: 1s;
+	.bg li {
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		opacity: 0;
+		transition: 1s;
+		background: #101820;
 
-        &.on {
-            opacity: 1;
-        }
-        &:nth-of-type(1) {
-            background-image: url(../img/bg1.jpg);
-        }
-        &:nth-of-type(2) {
-            background-image: url(../img/bg2.jpg);
-        }
-        &:nth-of-type(3) {
-            background-image: url(../img/bg3.jpg);
-        }
-        &:nth-of-type(4) {
-            background-image: url(../img/bg4.jpg);
-        }
-    }
+		&.on {
+			opacity: 1;
+		}
 
-    .swiper-wrapper {
-        width: 100%;
-        height: 100%;
+		&:nth-of-type(1){
+			.test {
+				width: 30%;
+				height: 100vh;
+			
+				position: absolute;
+				top: 0;
+				right: 0;
+				
+				background: rgba(0, 0, 0, 0.2);
+			
+				.st0 {
+					fill: #aa7f3d;
+					stroke-width: 10px;
+					stroke: #eebe7b;
+			
+					animation-name: DrawLine, FadeStroke, FillIn;
+					fill-opacity: 0;
+					animation-timing-function: ease-in-out;
+					animation-fill-mode: forwards;
+					
+			
+			
+				}
+			}
+			
+			.test1{
+				stroke-dasharray: 24200;
+				stroke-dashoffset: 24200; //24200;
+			
+				animation-delay: 1s, 3.5s, 3.5s;
+				animation-duration: 3.5s, 1s, 1s;
+			}
+		}
+	}
 
-        .swiper-slide {
-            width: 60vw;
-            height: 60vh;
-            position: relative;
-            top: 20vh;
+	.swiper-wrapper {
+		width: 100%;
+		height: 100%;
 
-            .inner {
-                width: 100%;
-                height: 100%;
-                border: 1px solid #fff;
-                background: rgba(255,255,255,0.5);
-                padding: 60px;
-                font: bold 50px/1 "lato"; color: #999;
-                backdrop-filter: blur(10px);
-                opacity: 0.5;
-                transition: opacity 1s;
-            }
+		.swiper-slide {
+			width: 60vw;
+			height: 70vh;
+			position: relative;
+			top: 20vh;
+			right: 15vw;
 
-            &.swiper-slide-active .inner {
-                opacity: 1;
-            }
-        }
-    }
+			.inner {
+				width: 100%;
+				height: 100%;
+				border: 1px solid #fff;
+				background: rgba(255, 255, 255, 0.8);
+				padding: 20px;
+				font: bold 50px/1 "lato";
+				color: #999;
+				backdrop-filter: blur(10px);
+				opacity: 0.5;
+				transition: opacity 1s;
+			}
 
-    .swiper-button-next {
-        top: auto;
-        bottom: 5vh;
-        right: 10vw;
-        transform: scale(0.5);
-        filter: brightness(0%);
-        opacity: 0.7;
-    }
-    .swiper-button-prev {
-        top: auto;
-        bottom: 5vh;
-        left: auto;
-        right: calc(10vw + 50px);
-        transform: scale(0.5);
-        filter: brightness(0%);
-        opacity: 0.7;
-    }
+			&.swiper-slide-active .inner {
+				opacity: 1;
+			}
+		}
 
-    .swiper-pagination {
-        position: absolute;
-        left: auto;
-        width: auto;
-        height: 50px;
-        right: 10vw;
-        top: 10vh;
+		.web .inner{
+			display: flex; justify-content: space-between;
+			.part_txt{
+				width: 20%; padding: 0 10px;
+				border: 1px solid red;
+			}
+			.part_img{
+				width: 40%;  overflow: auto;
+				img{width: 100%; object-fit: cover; }
+			}
+			.part_title{
+				width: 40%; padding: 0 10px;
+				border: 1px solid green;
+			}
+		}
+	}
 
-        span {
-            width: auto;
-            height: auto;
-            background: transparent;
-            border-radius: 0px;
-            margin-left: 60px;
-            opacity: 0.7;
+	.swiper-button-next {
+		top: auto;
+		bottom: 5vh;
+		right: 10vw;
+		transform: scale(0.5);
+		filter: brightness(0%);
+		opacity: 0.7;
+	}
+	.swiper-button-prev {
+		top: auto;
+		bottom: 5vh;
+		left: auto;
+		right: calc(10vw + 50px);
+		transform: scale(0.5);
+		filter: brightness(0%);
+		opacity: 0.7;
+	}
 
-            &.swiper-pagination-bullet-active {
-                opacity: 1; 
-                font-weight: bold;
-            }
-        }
-    }
+	.swiper-pagination {
+		position: absolute;
+		left: auto;
+		width: 60vw;
+		right: 0;
+		top: 5vh;
 
+		span {
+			color: #F2AA4C;
+			width: auto;
+			height: auto;
+			background: transparent;
+			border-radius: 0px;
+			padding: 20px 0;
+			margin-left: 60px;
+			opacity: 0.7;
+
+			&.swiper-pagination-bullet-active {
+				opacity: 1;
+				font-weight: bold;
+			}
+		}
+	}
+}
+
+.test {
+	width: 30%;
+	height: 100vh;
+
+	position: absolute;
+	top: 0;
+	right: 0;
+	
+	background: rgba(0, 0, 0, 0.2);
+
+	.st0 {
+		fill: #aa7f3d;
+		stroke-width: 10px;
+		stroke: #eebe7b;
+
+		animation-name: DrawLine, FadeStroke, FillIn;
+		fill-opacity: 0;
+		animation-timing-function: ease-in-out;
+		animation-fill-mode: forwards;
+		
+
+
+	}
+}
+
+.test1{
+	stroke-dasharray: 24200;
+	stroke-dashoffset: 24200; //24200;
+
+	animation-delay: 1s, 3.5s, 3.5s;
+	animation-duration: 3.5s, 1s, 1s;
+}
+
+.test2{
+	animation-delay: 1s, 3.5s, 3.5s;
+  animation-duration: 3.5s, 1s, 1s; 
+  stroke-dashArray: 60000;
+  stroke-dashoffset: 60000;
+}
+
+.test3{
+  animation-duration: 2s; 
+  stroke-dashArray: 10;
+  stroke-dashoffset: 10;
+}
+
+@keyframes dash {
+  from {
+    stroke-dashoffset: 1000;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes DrawLine {
+	to {
+		stroke-dashoffset: 0;
+	}
+}
+
+@keyframes FadeStroke {
+	to {
+		stroke-opacity: 0;
+	}
+}
+
+@keyframes FillIn {
+	from {
+		fill-opacity: 0;
+	}
+	to {
+		fill-opacity: 1;
+	}
 }
