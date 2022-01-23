@@ -164,7 +164,7 @@ a {
             display: block; }
           #wrap .swiper-wrapper .web .inner .part1 .txt h1 {
             padding: 5px 0;
-            font: 400 16px/1 'Noto Serif KR';
+            font: 700 20px/1 'Noto Serif KR';
             margin-bottom: 5px; }
           #wrap .swiper-wrapper .web .inner .part1 .txt a {
             display: inline-block;
@@ -174,19 +174,41 @@ a {
             border-top: 2px solid #101820;
             border-bottom: 2px solid #101820;
             color: #101820; }
+          #wrap .swiper-wrapper .web .inner .part1 .txt ul {
+            margin-bottom: 20px; }
           #wrap .swiper-wrapper .web .inner .part1 .txt ul li {
             padding: 2px 0;
             font: 400 14px/1.2 'Noto Serif KR'; }
           #wrap .swiper-wrapper .web .inner .part1 .txt h2, #wrap .swiper-wrapper .web .inner .part1 .txt h3 {
-            padding: 5px 0;
             font: 700 16px/1 'Noto Serif KR';
-            margin-bottom: 10px; }
+            margin-bottom: 5px; }
           #wrap .swiper-wrapper .web .inner .part1 .txt p {
-            padding: 5px 0;
-            font: 400 14px/1 'Noto Serif KR'; }
-          #wrap .swiper-wrapper .web .inner .part1 .txt span {
-            padding: 5px 0;
-            font: 400 14px/1 'Noto Serif KR'; }
+            font: 400 14px/1.6 'Noto Serif KR';
+            margin-bottom: 10px; }
+          #wrap .swiper-wrapper .web .inner .part1 .txt .wrap {
+            display: flex;
+            justify-content: flex-start;
+            margin-bottom: 20px; }
+            #wrap .swiper-wrapper .web .inner .part1 .txt .wrap .palette {
+              display: flex;
+              justify-content: space-between;
+              align-items: center; }
+              #wrap .swiper-wrapper .web .inner .part1 .txt .wrap .palette span {
+                padding: 5px;
+                font: 400 14px/1 'Noto Serif KR';
+                margin-right: 10px; }
+              #wrap .swiper-wrapper .web .inner .part1 .txt .wrap .palette strong {
+                display: inline-block;
+                width: 15px;
+                height: 15px;
+                border-radius: 50%;
+                text-indent: -99999px;
+                padding: 5px;
+                margin-top: 5px; }
+                #wrap .swiper-wrapper .web .inner .part1 .txt .wrap .palette strong.bg1 {
+                  background: #101820; }
+                #wrap .swiper-wrapper .web .inner .part1 .txt .wrap .palette strong.bg2 {
+                  background: #AA7F3D; }
         #wrap .swiper-wrapper .web .inner .part1 .pic {
           width: 100%;
           height: auto;

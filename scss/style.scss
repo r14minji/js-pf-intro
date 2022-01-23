@@ -131,17 +131,30 @@ $linegold: #eebe7b;
 				.txt{
 					width: 100%; 
 					strong{ height: 100px; font: 700 20px/1 'Noto Serif KR'; display: block;}
-					h1{padding: 5px 0;	font: 400 16px/1 'Noto Serif KR'; margin-bottom: 5px;}
+					h1{padding: 5px 0;	font: 700 20px/1 'Noto Serif KR'; margin-bottom: 5px;}
 					a{
 						display: inline-block; padding: 5px 2px;margin-bottom: 10px;
 						font: 700 14px/1 'Cinzel'; border-top: 2px solid $bg; border-bottom: 2px solid $bg;
 						color: $bg; 
 					}
 					// 3번째 박스에 해당
+					ul{margin-bottom: 20px;}
 					ul li{	padding: 2px 0; font: 400 14px/1.2 'Noto Serif KR'; }
-					h2, h3 {padding: 5px 0; font: 700 16px/1 'Noto Serif KR'; margin-bottom: 10px; }
-					p{	padding: 5px 0; font: 400 14px/1 'Noto Serif KR'; }
-					span{padding: 5px 0; font: 400 14px/1 'Noto Serif KR'; }
+					h2, h3 { font: 700 16px/1 'Noto Serif KR'; margin-bottom: 5px; }
+					p{font: 400 14px/1.6 'Noto Serif KR'; margin-bottom: 10px;}
+					.wrap{
+						display: flex; justify-content: flex-start;margin-bottom: 20px;
+						.palette{
+							display: flex; justify-content: space-between; align-items: center;
+							span{padding: 5px; font: 400 14px/1 'Noto Serif KR'; margin-right: 10px;}
+							strong{
+								display: inline-block; width: 15px; height: 15px; border-radius: 50%;
+								text-indent: -99999px; padding: 5px; margin-top: 5px;
+								&.bg1{background: #101820;}
+								&.bg2{background: #AA7F3D;}
+							}
+						}
+					}
 				}
 				.pic{
 					width: 100%;  height: auto; overflow: auto;
