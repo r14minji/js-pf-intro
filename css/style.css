@@ -174,11 +174,15 @@ a {
             border-top: 2px solid #101820;
             border-bottom: 2px solid #101820;
             color: #101820; }
+            #wrap .swiper-wrapper .web .inner .part1 .txt a i {
+              margin-right: 10px; }
           #wrap .swiper-wrapper .web .inner .part1 .txt ul {
             margin-bottom: 20px; }
           #wrap .swiper-wrapper .web .inner .part1 .txt ul li {
             padding: 2px 0;
-            font: 400 14px/1.2 'Noto Serif KR'; }
+            font: 400 14px/1.6 'Noto Serif KR'; }
+          #wrap .swiper-wrapper .web .inner .part1 .txt ul li i {
+            margin-right: 10px; }
           #wrap .swiper-wrapper .web .inner .part1 .txt h2, #wrap .swiper-wrapper .web .inner .part1 .txt h3 {
             font: 700 16px/1 'Noto Serif KR';
             margin-bottom: 5px; }
@@ -229,6 +233,9 @@ a {
           font-size: 30px; }
         #wrap .swiper-wrapper .web .inner .part2 p {
           padding: 5px 0;
+          font: 400 14px/1 'Noto Serif KR'; }
+        #wrap .swiper-wrapper .web .inner .part2 ul li {
+          padding: 2px 0;
           font: 400 14px/1 'Noto Serif KR'; }
   #wrap .swiper-button-next {
     top: auto;

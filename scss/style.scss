@@ -136,10 +136,12 @@ $linegold: #eebe7b;
 						display: inline-block; padding: 5px 2px;margin-bottom: 10px;
 						font: 700 14px/1 'Cinzel'; border-top: 2px solid $bg; border-bottom: 2px solid $bg;
 						color: $bg; 
+						i {margin-right: 10px;}
 					}
 					// 3번째 박스에 해당
 					ul{margin-bottom: 20px;}
-					ul li{	padding: 2px 0; font: 400 14px/1.2 'Noto Serif KR'; }
+					ul li{	padding: 2px 0; font: 400 14px/1.6 'Noto Serif KR'; }
+					ul li i {margin-right: 10px;}
 					h2, h3 { font: 700 16px/1 'Noto Serif KR'; margin-bottom: 5px; }
 					p{font: 400 14px/1.6 'Noto Serif KR'; margin-bottom: 10px;}
 					.wrap{
@@ -168,6 +170,7 @@ $linegold: #eebe7b;
 				h1{height: 100px; font: 700 36px/1 'Cinzel'; text-align: center;}
 				h1.title{font-size: 30px;}
 				p{	padding: 5px 0; font: 400 14px/1 'Noto Serif KR'; }
+				ul li {padding: 2px 0; font: 400 14px/1 'Noto Serif KR';}
 			}
 		}
 	}
