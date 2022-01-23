@@ -32,38 +32,27 @@ $linegold: #eebe7b;
 			opacity: 1;
 		}
 
-		&:nth-of-type(1){
-			.test {
-				width: 30%;
-				height: 100vh;
-			
-				position: absolute;
-				top: 0;
-				right: 0;
-				
-				background: rgba(0, 0, 0, 0.2);
-			
-				.st0 {
-					fill: $gold;
-					stroke-width: 10px;
-					stroke: $linegold;
-			
-					animation-name: DrawLine, FadeStroke, FillIn;
-					fill-opacity: 0;
-					animation-timing-function: ease-in-out;
-					animation-fill-mode: forwards;
-					
-			
-			
-				}
-			}
-			
-			.test1{
-				stroke-dasharray: 24200;
-				stroke-dashoffset: 24200; //24200;
-			
+		&:nth-of-type(4) .bg_line{margin-left: 200px;}
+		.bg_line {
+			width: 30%; height: 100vh;
+			position: absolute;  top: 0; right: 0;
+			padding-top: 70px;
+			background: rgba(255, 255, 255, 0.4);
+
+		
+		
+			.st0 {
+				fill: $gold; stroke: $linegold;
+				stroke-width: 10px;
+				animation-name: DrawLine, FadeStroke, FillIn;
+				fill-opacity: 0;
+				animation-timing-function: ease-in-out;
+				animation-fill-mode: forwards;
+
 				animation-delay: 1s, 3.5s, 3.5s;
 				animation-duration: 3.5s, 1s, 1s;
+				stroke-dasharray: 50000;
+				stroke-dashoffset: 50000; 
 			}
 		}
 	}
@@ -176,51 +165,9 @@ $linegold: #eebe7b;
 	}
 }
 
-.test {
-	width: 30%;
-	height: 100vh;
-
-	position: absolute;
-	top: 0;
-	right: 0;
-	
-	background: rgba(0, 0, 0, 0.2);
-
-	.st0 {
-		fill: #aa7f3d;
-		stroke-width: 10px;
-		stroke: #eebe7b;
-
-		animation-name: DrawLine, FadeStroke, FillIn;
-		fill-opacity: 0;
-		animation-timing-function: ease-in-out;
-		animation-fill-mode: forwards;
-		
 
 
-	}
-}
 
-.test1{
-	stroke-dasharray: 24200;
-	stroke-dashoffset: 24200; //24200;
-
-	animation-delay: 1s, 3.5s, 3.5s;
-	animation-duration: 3.5s, 1s, 1s;
-}
-
-.test2{
-	animation-delay: 1s, 3.5s, 3.5s;
-  animation-duration: 3.5s, 1s, 1s; 
-  stroke-dashArray: 60000;
-  stroke-dashoffset: 60000;
-}
-
-.test3{
-  animation-duration: 2s; 
-  stroke-dashArray: 10;
-  stroke-dashoffset: 10;
-}
 
 @keyframes dash {
   from {
@@ -251,3 +198,7 @@ $linegold: #eebe7b;
 		fill-opacity: 1;
 	}
 }
+
+
+
+

@@ -38,6 +38,7 @@ const prev = document.querySelector(".swiper-button-prev");
 const next = document.querySelector(".swiper-button-next");
 const navi = document.querySelectorAll(".swiper-pagination span");
 
+
 next.addEventListener("click", activation);
 prev.addEventListener("click", activation);
 window.addEventListener("mousewheel", activation);
@@ -58,6 +59,16 @@ function activation(){
 
     for(let el of bgs){
         el.classList.remove("on");
+        const removeLine = el.querySelectorAll("path");
+        for(let line of removeLine){
+            line.classList.remove("st0");
+        }
     }
     bgs[i].classList.add("on");
+    let activeLine = bgs[i].querySelectorAll("path");
+    console.log(activeLine)
+    for(let line of activeLine){
+        line.classList.add("st0")
+    }
+    
 }

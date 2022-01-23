@@ -32,26 +32,28 @@ a {
     background: #101820; }
     #wrap .bg li.on {
       opacity: 1; }
-    #wrap .bg li:nth-of-type(1) .test {
+    #wrap .bg li:nth-of-type(4) .bg_line {
+      margin-left: 200px; }
+    #wrap .bg li .bg_line {
       width: 30%;
       height: 100vh;
       position: absolute;
       top: 0;
       right: 0;
-      background: rgba(0, 0, 0, 0.2); }
-      #wrap .bg li:nth-of-type(1) .test .st0 {
+      padding-top: 70px;
+      background: rgba(255, 255, 255, 0.4); }
+      #wrap .bg li .bg_line .st0 {
         fill: #aa7f3d;
-        stroke-width: 10px;
         stroke: #eebe7b;
+        stroke-width: 10px;
         animation-name: DrawLine, FadeStroke, FillIn;
         fill-opacity: 0;
         animation-timing-function: ease-in-out;
-        animation-fill-mode: forwards; }
-    #wrap .bg li:nth-of-type(1) .test1 {
-      stroke-dasharray: 24200;
-      stroke-dashoffset: 24200;
-      animation-delay: 1s, 3.5s, 3.5s;
-      animation-duration: 3.5s, 1s, 1s; }
+        animation-fill-mode: forwards;
+        animation-delay: 1s, 3.5s, 3.5s;
+        animation-duration: 3.5s, 1s, 1s;
+        stroke-dasharray: 50000;
+        stroke-dashoffset: 50000; }
   #wrap .swiper-wrapper {
     width: 100%;
     height: 100%; }
@@ -146,39 +148,6 @@ a {
       #wrap .swiper-pagination span.swiper-pagination-bullet-active {
         opacity: 1;
         font-weight: bold; }
-
-.test {
-  width: 30%;
-  height: 100vh;
-  position: absolute;
-  top: 0;
-  right: 0;
-  background: rgba(0, 0, 0, 0.2); }
-  .test .st0 {
-    fill: #aa7f3d;
-    stroke-width: 10px;
-    stroke: #eebe7b;
-    animation-name: DrawLine, FadeStroke, FillIn;
-    fill-opacity: 0;
-    animation-timing-function: ease-in-out;
-    animation-fill-mode: forwards; }
-
-.test1 {
-  stroke-dasharray: 24200;
-  stroke-dashoffset: 24200;
-  animation-delay: 1s, 3.5s, 3.5s;
-  animation-duration: 3.5s, 1s, 1s; }
-
-.test2 {
-  animation-delay: 1s, 3.5s, 3.5s;
-  animation-duration: 3.5s, 1s, 1s;
-  stroke-dashArray: 60000;
-  stroke-dashoffset: 60000; }
-
-.test3 {
-  animation-duration: 2s;
-  stroke-dashArray: 10;
-  stroke-dashoffset: 10; }
 
 @keyframes dash {
   from {
