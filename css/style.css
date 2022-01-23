@@ -65,10 +65,9 @@ a {
         width: 100%;
         height: 100%;
         border: 1px solid #fff;
-        background: rgba(255, 255, 255, 0.8);
-        padding: 20px;
-        font: bold 50px/1 "lato";
-        color: #999;
+        background: #fff;
+        font: bold 30px/1 "Cinzel";
+        color: #101820;
         backdrop-filter: blur(10px);
         opacity: 0.5;
         transition: opacity 1s; }
@@ -77,20 +76,42 @@ a {
     #wrap .swiper-wrapper .web .inner {
       display: flex;
       justify-content: space-between; }
-      #wrap .swiper-wrapper .web .inner .part_txt {
-        width: 20%;
-        padding: 0 10px;
-        border: 1px solid red; }
-      #wrap .swiper-wrapper .web .inner .part_img {
-        width: 40%;
-        overflow: auto; }
-        #wrap .swiper-wrapper .web .inner .part_img img {
+      #wrap .swiper-wrapper .web .inner .part1 {
+        background: white;
+        width: 32%;
+        padding: 10px 10px 0px;
+        height: 100%; }
+        #wrap .swiper-wrapper .web .inner .part1 .txt {
           width: 100%;
-          object-fit: cover; }
-      #wrap .swiper-wrapper .web .inner .part_title {
-        width: 40%;
-        padding: 0 10px;
-        border: 1px solid green; }
+          height: 30%;
+          font-size: 20px;
+          font-family: 'Nanum Gothic'; }
+        #wrap .swiper-wrapper .web .inner .part1 .pic {
+          width: 100%;
+          height: 70%;
+          overflow: auto; }
+          #wrap .swiper-wrapper .web .inner .part1 .pic img {
+            width: 100%;
+            object-fit: cover; }
+      #wrap .swiper-wrapper .web .inner .part2 {
+        width: 32%;
+        overflow: auto;
+        background: white; }
+      #wrap .swiper-wrapper .web .inner .part3 {
+        width: 32%;
+        padding: 10px 10px 0px;
+        height: 100%;
+        background: white; }
+        #wrap .swiper-wrapper .web .inner .part3 .txt {
+          width: 100%;
+          height: 30%; }
+        #wrap .swiper-wrapper .web .inner .part3 .pic {
+          width: 100%;
+          height: 70%;
+          overflow: auto; }
+          #wrap .swiper-wrapper .web .inner .part3 .pic img {
+            width: 100%;
+            object-fit: cover; }
   #wrap .swiper-button-next {
     top: auto;
     bottom: 5vh;
@@ -120,7 +141,8 @@ a {
       border-radius: 0px;
       padding: 20px 0;
       margin-left: 60px;
-      opacity: 0.7; }
+      opacity: 0.7;
+      font-family: 'Cinzel'; }
       #wrap .swiper-pagination span.swiper-pagination-bullet-active {
         opacity: 1;
         font-weight: bold; }
