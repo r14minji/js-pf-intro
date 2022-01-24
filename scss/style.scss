@@ -234,9 +234,12 @@ $linegold: #eebe7b;
 		// 네번째
 		.contact .inner{
 			padding: 80px 100px;
-			h1{padding: 10px 0; font: 700 28px/1 'Noto Serif KR';  text-align: center;margin-bottom: 40px;}
+			display: flex; flex-direction: column; justify-content: center;
+			h1{
+				padding: 10px 0; font: 700 28px/1 'Noto Serif KR';  text-align: center;
+				margin-bottom: 40px;
+			}
 			form{
-				float:right;
 				width: 100%;
 				position: relative;
 			  display: flex; justify-content: center; align-items: center; flex-wrap: wrap;
