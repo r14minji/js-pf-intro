@@ -10,7 +10,9 @@
 	<link rel="stylesheet" href="css/style.css">
 	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 	<script src="https://kit.fontawesome.com/91c15511c8.js" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 	<script defer src="js/main.js"></script>
+	<script defer src="js/mail.js"></script>
 </head>
 
 <body>
@@ -853,8 +855,28 @@
 					</section>
 				</div>
 			</div>
-			<div class="swiper-slide">
-				<div class="inner">CONTACT</div>
+			<div class="swiper-slide contact">
+				<div class="inner">
+					<h1>CONTACT</h1>
+					<form action="" id="contact-form">
+            <!-- number -->
+            <input type="hidden" name="contact_number">
+            <!-- name -->
+            <label for="to_name">name</label>
+            <input type="text" name="to_name" id="to_name" required placeholder="성함을 입력해주세요." >
+            <!-- email -->
+            <label for="from_name">Email</label>
+            <input type="text" name="from_name" id="from_name" required placeholder="이메일 주소를 입력해주세요.">
+            <!-- telephone -->
+            <label for="contact_num">Telephone</label>
+            <input type="text" name="contact_num" id="contact_num" placeholder="전화번호를 남겨주세요.">
+            <!-- message -->
+            <label for="message_html">남기고 싶은 말을 작성해주세요.</label>
+            <textarea name="message_html" id="message_html" cols="30" rows="5"></textarea>
+
+            <input type="submit" value="Submit">
+          </form>
+				</div>
 			</div>
 		</article>
 

@@ -66,7 +66,7 @@ function activation(){
     }
     bgs[i].classList.add("on");
     let activeLine = bgs[i].querySelectorAll("path");
-    console.log(activeLine)
+    //console.log(activeLine)
     for(let line of activeLine){
         line.classList.add("st0")
     }

@@ -65,17 +65,14 @@ $linegold: #eebe7b;
 		&:nth-of-type(2){
 			background: #262223; 
 				&::after{display: none; background: #DDC6B6;}
-				//.bg_line .st0{fill: $yellow; stroke: rgba(0,0,0,0.5);}
 		}
 		&:nth-of-type(3) {
 			background: #343148; 
 				&::after{display: none; background:#D7C49E;}
-				//.bg_line .st0{fill:  $gold; stroke: rgba(0,0,0,0.5);}
 		}
 		&:nth-of-type(4) {
 			background: #02343F; 
 				&::after{background:#F0EDCC;}
-				//.bg_line .st0{fill: $yellow; stroke: rgba(0,0,0,0.5);}
 		}
 	}
 
@@ -230,6 +227,61 @@ $linegold: #eebe7b;
 					font: 700 14px/1 'Cinzel'; border-top: 2px solid $bg; border-bottom: 2px solid $bg;
 					color: $bg; 
 					i {margin-right: 10px;}
+				}
+			}
+		}
+
+		// 네번째
+		.contact .inner{
+			padding: 80px 100px;
+			h1{padding: 10px 0; font: 700 28px/1 'Noto Serif KR';  text-align: center;margin-bottom: 40px;}
+			form{
+				float:right;
+				width: 100%;
+				position: relative;
+			  display: flex; justify-content: center; align-items: center; flex-wrap: wrap;
+	
+				label{
+					display: block; width: 30%;
+					padding: 10px 0px; 
+					font-size: 14px; text-transform: uppercase;
+					line-height: 1px;
+					color: #555;
+					margin-bottom: 10px;
+					&:nth-of-type(4){width: 100%; margin: 10px 0;}
+				}
+
+				input[type=text]{
+					display: block; width: 70%;
+					border: none;	border-bottom: 1px solid #333;
+					position: relative;
+					background-color: transparent;
+					color: #555; 
+					padding: 5px 10px;
+					outline: none;
+					font-size: 14px;
+					margin-bottom: 10px;
+				}
+
+				textarea{
+					width: 100%; height: 80px;
+					resize: none;
+					margin-bottom: 40px;
+				}
+	
+				input[type=submit]{
+					display: block; width: 100%;
+					height: 40px;
+					border: none;
+					background: $gold;
+					color: #fff;
+					transition: .5s ease-in-out;
+
+					&:hover{
+						border: 1px solid $gold;
+						background:#fff;
+						color: $gold;
+					}
 				}
 			}
 		}
