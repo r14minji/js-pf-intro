@@ -383,7 +383,7 @@ a {
     bottom: 5vh;
     right: 10vw;
     transform: scale(0.5);
-    filter: brightness(0%);
+    filter: hue-rotate(200deg);
     opacity: 0.7; }
   #wrap .swiper-button-prev {
     top: auto;
@@ -391,7 +391,7 @@ a {
     left: auto;
     right: calc(10vw + 50px);
     transform: scale(0.5);
-    filter: brightness(0%);
+    filter: hue-rotate(200deg);
     opacity: 0.7; }
   #wrap .swiper-pagination {
     position: absolute;

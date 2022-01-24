@@ -5,7 +5,6 @@
   
 window.onload = function(){
   const form = document.getElementById("contact-form");
-  console.log(form)
 
   // 고유 contact 숫자 랜덤하게 생성
   form.addEventListener("submit", function(e){

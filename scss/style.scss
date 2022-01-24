@@ -295,7 +295,7 @@ $linegold: #eebe7b;
 		bottom: 5vh;
 		right: 10vw;
 		transform: scale(0.5);
-		filter: brightness(0%);
+		filter: hue-rotate(200deg);
 		opacity: 0.7;
 	}
 	.swiper-button-prev {
@@ -304,7 +304,7 @@ $linegold: #eebe7b;
 		left: auto;
 		right: calc(10vw + 50px);
 		transform: scale(0.5);
-		filter: brightness(0%);
+		filter:  hue-rotate(200deg);
 		opacity: 0.7;
 	}
 
