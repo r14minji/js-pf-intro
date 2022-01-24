@@ -53,7 +53,7 @@ a {
       position: absolute;
       top: 0;
       right: 0;
-      padding-top: 70px; }
+      padding-top: 20vh; }
       #wrap .bg li .bg_line .st0 {
         fill: #aa7f3d;
         stroke: #eebe7b;
@@ -82,11 +82,14 @@ a {
         background: #F0EDCC; }
   #wrap .swiper-wrapper {
     width: 100%;
-    height: 100%; }
+    height: 100%;
+    position: relative;
+    z-index: 2; }
     #wrap .swiper-wrapper .swiper-slide {
       width: 60vw;
       height: 80vh;
       position: relative;
+      z-index: 2;
       top: 15vh;
       right: 12vw; }
       #wrap .swiper-wrapper .swiper-slide .inner {
@@ -334,6 +337,7 @@ a {
     opacity: 0.7; }
   #wrap .swiper-pagination {
     position: absolute;
+    z-index: 1;
     left: auto;
     width: 60vw;
     right: 0;
