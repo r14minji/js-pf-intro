@@ -24,9 +24,6 @@ a {
     position: absolute;
     top: 0px;
     left: 0px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
     opacity: 0;
     transition: 1s;
     background: #101820; }
@@ -45,7 +42,7 @@ a {
       opacity: 1; }
       #wrap .bg li.on::after {
         opacity: 1; }
-    #wrap .bg li:nth-of-type(4) .bg_line {
+    #wrap .bg li:nth-of-type(5) .bg_line {
       margin-left: 200px; }
     #wrap .bg li .bg_line {
       width: 30%;
@@ -69,16 +66,18 @@ a {
     #wrap .bg li:nth-of-type(2) {
       background: #262223; }
       #wrap .bg li:nth-of-type(2)::after {
-        display: none;
-        background: #DDC6B6; }
+        display: none; }
     #wrap .bg li:nth-of-type(3) {
       background: #343148; }
       #wrap .bg li:nth-of-type(3)::after {
-        display: none;
-        background: #D7C49E; }
+        display: none; }
     #wrap .bg li:nth-of-type(4) {
-      background: #02343F; }
+      background: #7e2c1a; }
       #wrap .bg li:nth-of-type(4)::after {
+        display: none; }
+    #wrap .bg li:nth-of-type(5) {
+      background: #02343F; }
+      #wrap .bg li:nth-of-type(5)::after {
         background: #F0EDCC; }
   #wrap .swiper-wrapper {
     width: 100%;
@@ -98,7 +97,6 @@ a {
         background: #fff;
         font: bold 30px/1 "Cinzel";
         color: #101820;
-        backdrop-filter: blur(10px);
         opacity: 0.5;
         transition: opacity 1s; }
       #wrap .swiper-wrapper .swiper-slide.swiper-slide-active .inner {
@@ -125,7 +123,7 @@ a {
             font: 400 12px/1.6 'Noto Serif KR'; }
         #wrap .swiper-wrapper .about .inner .intro .contents li {
           padding: 2px 0;
-          font: 400 13px/1.2 'Noto Serif KR'; }
+          font: 400 12px/1.2 'Noto Serif KR'; }
         #wrap .swiper-wrapper .about .inner .intro .github {
           display: inline-block;
           padding: 5px 2px;
@@ -177,149 +175,150 @@ a {
     #wrap .swiper-wrapper .web .inner {
       display: flex;
       justify-content: space-between;
-      background: transparent; }
-      #wrap .swiper-wrapper .web .inner .part1 {
-        width: 32%;
+      background: transparent;
+      overflow: auto; }
+      #wrap .swiper-wrapper .web .inner .siteImg {
+        width: 65%;
         padding: 10px 20px;
-        height: 100%;
-        background: white;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between; }
-        #wrap .swiper-wrapper .web .inner .part1 .txt {
-          width: 100%; }
-          #wrap .swiper-wrapper .web .inner .part1 .txt strong {
-            height: 100px;
-            font: 700 20px/1 'Noto Serif KR';
-            display: block; }
-          #wrap .swiper-wrapper .web .inner .part1 .txt h1 {
+        background: white; }
+        #wrap .swiper-wrapper .web .inner .siteImg .txt {
+          width: 100%;
+          height: 30%;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around; }
+          #wrap .swiper-wrapper .web .inner .siteImg .txt h1 {
+            font: 600 30px/1 'Cinzel';
             padding: 5px 0;
-            font: 700 20px/1 'Noto Serif KR';
-            margin-bottom: 5px; }
-          #wrap .swiper-wrapper .web .inner .part1 .txt a {
+            text-transform: uppercase;
+            text-align: center; }
+          #wrap .swiper-wrapper .web .inner .siteImg .txt ul li {
+            padding: 2px 0;
+            font: 400 14px/1.6 'Noto Serif KR'; }
+            #wrap .swiper-wrapper .web .inner .siteImg .txt ul li i {
+              margin-right: 10px; }
+        #wrap .swiper-wrapper .web .inner .siteImg .pic {
+          width: 100%;
+          height: 70%;
+          overflow: auto; }
+          #wrap .swiper-wrapper .web .inner .siteImg .pic img {
+            width: 100%;
+            object-fit: cover; }
+      #wrap .swiper-wrapper .web .inner .description {
+        width: 33%;
+        padding: 40px 20px;
+        height: 100%;
+        background: #fafafa;
+        overflow: auto; }
+        #wrap .swiper-wrapper .web .inner .description article {
+          width: 100%; }
+          #wrap .swiper-wrapper .web .inner .description article h2 {
+            font: 700 16px/1 'Noto Serif KR';
+            margin-bottom: 10px; }
+          #wrap .swiper-wrapper .web .inner .description article p {
+            font: 400 14px/1.6 'Noto Serif KR';
+            margin-bottom: 10px; }
+          #wrap .swiper-wrapper .web .inner .description article strong {
+            font: 700 18px/1 'Noto Serif KR';
+            margin: 20px 0;
+            display: block; }
+          #wrap .swiper-wrapper .web .inner .description article a {
             display: inline-block;
             padding: 5px 2px;
-            margin-bottom: 10px;
+            margin-bottom: 30px;
             font: 700 14px/1 'Cinzel';
             border-top: 2px solid #101820;
             border-bottom: 2px solid #101820;
             color: #101820; }
-            #wrap .swiper-wrapper .web .inner .part1 .txt a i {
+            #wrap .swiper-wrapper .web .inner .description article a i {
               margin-right: 10px; }
-          #wrap .swiper-wrapper .web .inner .part1 .txt ul {
-            margin-bottom: 20px; }
-          #wrap .swiper-wrapper .web .inner .part1 .txt ul li {
-            padding: 2px 0;
-            font: 400 14px/1.6 'Noto Serif KR'; }
-          #wrap .swiper-wrapper .web .inner .part1 .txt ul li i {
-            margin-right: 10px; }
-          #wrap .swiper-wrapper .web .inner .part1 .txt h2, #wrap .swiper-wrapper .web .inner .part1 .txt h3 {
-            font: 700 16px/1 'Noto Serif KR';
-            margin-bottom: 5px; }
-          #wrap .swiper-wrapper .web .inner .part1 .txt p {
-            font: 400 14px/1.6 'Noto Serif KR';
-            margin-bottom: 10px; }
-          #wrap .swiper-wrapper .web .inner .part1 .txt .wrap {
+          #wrap .swiper-wrapper .web .inner .description article .wrap {
             display: flex;
-            justify-content: flex-start;
+            justify-content: space-between;
             margin-bottom: 20px; }
-            #wrap .swiper-wrapper .web .inner .part1 .txt .wrap .palette {
+            #wrap .swiper-wrapper .web .inner .description article .wrap .palette {
               display: flex;
-              justify-content: space-between;
-              align-items: center; }
-              #wrap .swiper-wrapper .web .inner .part1 .txt .wrap .palette span {
-                padding: 5px;
+              justify-content: flex-start;
+              align-items: center;
+              height: 20px; }
+              #wrap .swiper-wrapper .web .inner .description article .wrap .palette span {
                 font: 400 14px/1 'Noto Serif KR';
-                margin-right: 10px; }
-              #wrap .swiper-wrapper .web .inner .part1 .txt .wrap .palette strong {
+                margin: 0px 10px; }
+              #wrap .swiper-wrapper .web .inner .description article .wrap .palette strong {
                 display: inline-block;
                 width: 15px;
                 height: 15px;
                 border-radius: 50%;
-                text-indent: -99999px;
-                padding: 5px;
-                margin-top: 5px; }
-                #wrap .swiper-wrapper .web .inner .part1 .txt .wrap .palette strong.bg1 {
-                  background: #333; }
-                #wrap .swiper-wrapper .web .inner .part1 .txt .wrap .palette strong.bg2 {
-                  background: #ddd; }
-                #wrap .swiper-wrapper .web .inner .part1 .txt .wrap .palette strong.bg3 {
+                text-indent: -99999px; }
+                #wrap .swiper-wrapper .web .inner .description article .wrap .palette strong.pf_bg1 {
+                  background: #e6e2dd; }
+                #wrap .swiper-wrapper .web .inner .description article .wrap .palette strong.pf_bg2 {
+                  background: #303030; }
+                #wrap .swiper-wrapper .web .inner .description article .wrap .palette strong.pf_bg4 {
+                  background: #D1AC8F; }
+                #wrap .swiper-wrapper .web .inner .description article .wrap .palette strong.pf_bg5 {
                   background: #101820; }
-                #wrap .swiper-wrapper .web .inner .part1 .txt .wrap .palette strong.bg4 {
-                  background: #AA7F3D; }
-        #wrap .swiper-wrapper .web .inner .part1 .pic {
+    #wrap .swiper-wrapper .others .inner {
+      display: flex;
+      justify-content: space-between;
+      background: transparent; }
+      #wrap .swiper-wrapper .others .inner .etc {
+        width: 30%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 20px 10px;
+        background: #fff; }
+        #wrap .swiper-wrapper .others .inner .etc .txt {
           width: 100%;
-          height: auto;
-          overflow: auto; }
-          #wrap .swiper-wrapper .web .inner .part1 .pic img {
+          height: 80%;
+          overflow: auto;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between; }
+          #wrap .swiper-wrapper .others .inner .etc .txt article h1 {
+            font: 700 20px/1 'Noto Serif KR';
+            margin-bottom: 10px;
+            text-align: center; }
+          #wrap .swiper-wrapper .others .inner .etc .txt article h2 {
+            font: 700 16px/1 'Noto Serif KR';
+            margin-bottom: 10px; }
+          #wrap .swiper-wrapper .others .inner .etc .txt article p {
+            font: 400 14px/1.6 'Noto Serif KR';
+            margin-bottom: 10px; }
+          #wrap .swiper-wrapper .others .inner .etc .txt article strong {
+            font: 400 14px/1.6 'Noto Serif KR';
+            margin-bottom: 20px;
+            display: block;
+            text-align: center; }
+          #wrap .swiper-wrapper .others .inner .etc .txt article ul {
+            margin-bottom: 10px; }
+            #wrap .swiper-wrapper .others .inner .etc .txt article ul li {
+              padding: 2px 0;
+              font: 400 14px/1.6 'Noto Serif KR'; }
+              #wrap .swiper-wrapper .others .inner .etc .txt article ul li i {
+                margin-right: 10px; }
+          #wrap .swiper-wrapper .others .inner .etc .txt article a {
+            display: inline-block;
+            padding: 5px 2px;
+            margin-bottom: 30px;
+            font: 700 14px/1 'Cinzel';
+            border-top: 2px solid #101820;
+            border-bottom: 2px solid #101820;
+            color: #101820; }
+            #wrap .swiper-wrapper .others .inner .etc .txt article a i {
+              margin-right: 10px; }
+          #wrap .swiper-wrapper .others .inner .etc .txt span {
+            color: #ccc;
+            padding: 0; }
+        #wrap .swiper-wrapper .others .inner .etc .pic {
+          width: 100%;
+          height: 20%;
+          background: #fff; }
+          #wrap .swiper-wrapper .others .inner .etc .pic img {
             width: 100%;
             object-fit: cover; }
-      #wrap .swiper-wrapper .web .inner .part2 {
-        width: 32%;
-        padding: 10px 20px;
-        height: 100%;
-        background: #fafafa; }
-        #wrap .swiper-wrapper .web .inner .part2 h1 {
-          height: 100px;
-          font: 700 36px/1 'Cinzel';
-          text-align: center; }
-          #wrap .swiper-wrapper .web .inner .part2 h1.title {
-            font-size: 30px; }
-        #wrap .swiper-wrapper .web .inner .part2 p {
-          font: 400 14px/1.6 'Noto Serif KR';
-          margin-bottom: 10px; }
-        #wrap .swiper-wrapper .web .inner .part2 ul {
-          margin-bottom: 30px; }
-          #wrap .swiper-wrapper .web .inner .part2 ul li {
-            padding: 2px 0;
-            font: 400 14px/1.6 'Noto Serif KR'; }
-            #wrap .swiper-wrapper .web .inner .part2 ul li i {
-              margin-right: 10px; }
-        #wrap .swiper-wrapper .web .inner .part2 h2, #wrap .swiper-wrapper .web .inner .part2 h3, #wrap .swiper-wrapper .web .inner .part2 h4 {
-          font: 700 16px/1 'Noto Serif KR';
-          margin-bottom: 5px; }
-        #wrap .swiper-wrapper .web .inner .part2 .wrap {
-          display: flex;
-          justify-content: flex-start;
-          margin-bottom: 20px; }
-          #wrap .swiper-wrapper .web .inner .part2 .wrap .palette {
-            display: flex;
-            justify-content: space-between;
-            align-items: center; }
-            #wrap .swiper-wrapper .web .inner .part2 .wrap .palette span {
-              padding: 5px;
-              font: 400 14px/1 'Noto Serif KR';
-              margin-right: 10px; }
-            #wrap .swiper-wrapper .web .inner .part2 .wrap .palette strong {
-              display: inline-block;
-              width: 15px;
-              height: 15px;
-              border-radius: 50%;
-              text-indent: -99999px;
-              padding: 5px;
-              margin-top: 5px; }
-              #wrap .swiper-wrapper .web .inner .part2 .wrap .palette strong.pf_bg1 {
-                background: #e6e2dd; }
-              #wrap .swiper-wrapper .web .inner .part2 .wrap .palette strong.pf_bg2 {
-                background: #303030; }
-              #wrap .swiper-wrapper .web .inner .part2 .wrap .palette strong.pf_bg3 {
-                background: #C1554E; }
-              #wrap .swiper-wrapper .web .inner .part2 .wrap .palette strong.pf_bg4 {
-                background: #D1AC8F; }
-              #wrap .swiper-wrapper .web .inner .part2 .wrap .palette strong.pf_bg5 {
-                background: #101820; }
-              #wrap .swiper-wrapper .web .inner .part2 .wrap .palette strong.pf_bg6 {
-                background: #821002; }
-        #wrap .swiper-wrapper .web .inner .part2 .guide {
-          display: inline-block;
-          padding: 5px 2px;
-          margin-bottom: 10px;
-          font: 700 14px/1 'Cinzel';
-          border-top: 2px solid #101820;
-          border-bottom: 2px solid #101820;
-          color: #101820; }
-          #wrap .swiper-wrapper .web .inner .part2 .guide i {
-            margin-right: 10px; }
     #wrap .swiper-wrapper .contact .inner {
       padding: 80px 100px;
       display: flex;
@@ -395,7 +394,7 @@ a {
     opacity: 0.7; }
   #wrap .swiper-pagination {
     position: absolute;
-    z-index: 1;
+    height: 100px;
     left: auto;
     width: 60vw;
     right: 0;

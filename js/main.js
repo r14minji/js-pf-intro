@@ -1,4 +1,4 @@
-const menu = ["ABOUT", "WEB:REACT", "WEB:JS", "CONTACT"];
+const menu = ["ABOUT", "WEB:REACT", "WEB:JS", "Others", "CONTACT"];
 
 const swiper = new Swiper("#wrap", {
     loop: true,
@@ -21,15 +21,6 @@ const swiper = new Swiper("#wrap", {
         }
 
     },
-    /*
-    effect: "coverflow",
-    coverflowEffect: {
-        rotate: 50,
-        stretch: 0,
-        depth: 400,
-        slideShadows: false
-    }
-    */
 });
 
 //Dom Caching

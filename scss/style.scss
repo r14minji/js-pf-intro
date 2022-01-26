@@ -37,8 +37,10 @@ $linegold: #eebe7b;
 			opacity: 1;
 			&::after{opacity: 1;}
 		}
-		&:nth-of-type(4) .bg_line{margin-left: 200px;}
+		// 마지막 sgv
+		&:nth-of-type(5) .bg_line{margin-left: 200px;}
 
+		// sgv
 		.bg_line {
 			width: 30%; height: 100vh;
 			position: absolute;  top: 0; right: 0;  
@@ -59,15 +61,20 @@ $linegold: #eebe7b;
 			}
 		}
 
+		//bg color 변경
 		&:nth-of-type(2){
 			background: #262223; 
-				&::after{display: none; background: #DDC6B6;}
+				&::after{display: none;}
 		}
 		&:nth-of-type(3) {
 			background: #343148; 
-				&::after{display: none; background:#D7C49E;}
+				&::after{display: none;}
 		}
 		&:nth-of-type(4) {
+			background: #7e2c1a; 
+				&::after{display: none;}
+		}
+		&:nth-of-type(5) {
 			background: #02343F; 
 				&::after{background:#F0EDCC;}
 		}
@@ -95,7 +102,7 @@ $linegold: #eebe7b;
 			}
 		}
 
-		// 첫번째 swiper-slide
+		// slide1 - About
 		.about .inner{
 			display: flex; justify-content: space-between;
 			.intro{
@@ -107,7 +114,7 @@ $linegold: #eebe7b;
 					margin-bottom: 80px;
 				}
 				.contents li{
-					padding: 2px 0; font: 400 13px/1.2 'Noto Serif KR'; 
+					padding: 2px 0; font: 400 12px/1.2 'Noto Serif KR'; 
 				}
 				.github {
 					display: inline-block; padding: 5px 2px;margin-bottom: 10px;
@@ -139,95 +146,103 @@ $linegold: #eebe7b;
 			}
 		}
 
-		// 두번째 세번째 swiper-slide
+		//  slide2 - React pf, slide3 - Vanila JS pf 
 		.web .inner{
 			display: flex; justify-content: space-between;
-			background: transparent;
-			.part1{
-				width: 32%; padding: 10px 20px;
-				height: 100%;  background: rgb(255, 255, 255); 
-				display: flex; flex-direction: column; justify-content: space-between;
+			background: transparent; overflow: auto;
+			.siteImg{
+				width: 65%; padding: 10px 20px;
+				background: rgb(255, 255, 255); 
 				.txt{
-					width: 100%; 
-					strong{ height: 100px; font: 700 20px/1 'Noto Serif KR'; display: block;}
-					h1{padding: 5px 0;	font: 700 20px/1 'Noto Serif KR'; margin-bottom: 5px;}
-					a{
-						display: inline-block; padding: 5px 2px;margin-bottom: 10px;
-						font: 700 14px/1 'Cinzel'; border-top: 2px solid $bg; border-bottom: 2px solid $bg;
-						color: $bg; 
-						i {margin-right: 10px;}
-					}
-					// 3번째 박스에 해당
-					ul{margin-bottom: 20px;}
-					ul li{	padding: 2px 0; font: 400 14px/1.6 'Noto Serif KR'; }
-					ul li i {margin-right: 10px;}
-					h2, h3 { font: 700 16px/1 'Noto Serif KR'; margin-bottom: 5px; }
-					p{font: 400 14px/1.6 'Noto Serif KR'; margin-bottom: 10px;}
-					.wrap{
-						display: flex; justify-content: flex-start;margin-bottom: 20px;
-						.palette{
-							display: flex; justify-content: space-between; align-items: center;
-							span{padding: 5px; font: 400 14px/1 'Noto Serif KR'; margin-right: 10px;}
-							strong{
-								display: inline-block; width: 15px; height: 15px; border-radius: 50%;
-								text-indent: -99999px; padding: 5px; margin-top: 5px;
-								&.bg1{background: #333;}
-								&.bg2{background: #ddd;}
-								&.bg3{background: #101820;}
-								&.bg4{background: #AA7F3D;}
-							}
-						}
-					}
-				}
-				.pic{
-					width: 100%;  height: auto; overflow: auto;
-					img{width: 100%; object-fit: cover; }
-				}
-
-			}
-			.part2{
-				width: 32%; padding: 10px 20px; height: 100%;
-				background: rgb(250, 250, 250);
-				h1{
-					height: 100px; font: 700 36px/1 'Cinzel'; text-align: center; 
-					&.title {font-size: 30px;}
-				}
-				p{font: 400 14px/1.6 'Noto Serif KR'; margin-bottom: 10px; }
-				ul{
-					margin-bottom: 30px;
-					li{
+					width: 100%; height: 30%;
+					display: flex; flex-direction: column; justify-content: space-around;
+					h1{font: 600 30px/1 'Cinzel';  padding: 5px 0; text-transform: uppercase; text-align: center;}
+					ul li{
 						padding: 2px 0; font: 400 14px/1.6 'Noto Serif KR';
 						i{margin-right: 10px;}
 					}
 				}
-				h2, h3, h4 { font: 700 16px/1 'Noto Serif KR'; margin-bottom: 5px; }
-				.wrap{
-					display: flex; justify-content: flex-start;margin-bottom: 20px;
-					.palette{
-						display: flex; justify-content: space-between; align-items: center;
-						span{padding: 5px; font: 400 14px/1 'Noto Serif KR'; margin-right: 10px;}
-						strong{
-							display: inline-block; width: 15px; height: 15px; border-radius: 50%;
-							text-indent: -99999px; padding: 5px; margin-top: 5px;
-							&.pf_bg1{background: #e6e2dd;}
-							&.pf_bg2{background: #303030;}
-							&.pf_bg3{background: #C1554E;}
-							&.pf_bg4{background: #D1AC8F;}
-							&.pf_bg5{background: #101820;}
-							&.pf_bg6{background: #821002;}
+				.pic{
+					width: 100%; height: 70%; overflow: auto;
+					img{width: 100%;  object-fit: cover; }
+				}
+			}
+			.description{
+				width: 33%; padding: 40px 20px; height: 100%;
+				background: rgb(250, 250, 250); overflow: auto;
+				article{
+					width: 100%;
+					h2{ font: 700 16px/1 'Noto Serif KR'; margin-bottom: 10px; }
+					p{font: 400 14px/1.6 'Noto Serif KR'; margin-bottom: 10px; }
+					strong{font: 700 18px/1 'Noto Serif KR'; margin: 20px 0; display: block;}
+					a{
+						display: inline-block; padding: 5px 2px;margin-bottom: 30px;
+						font: 700 14px/1 'Cinzel'; border-top: 2px solid $bg; border-bottom: 2px solid $bg;
+						color: $bg; 
+						i {margin-right: 10px;}
+					}
+					.wrap{
+						display: flex; justify-content: space-between;margin-bottom: 20px; 
+						.palette{
+							display: flex; justify-content: flex-start; align-items: center; height: 20px;
+							span{ font: 400 14px/1 'Noto Serif KR'; margin: 0px 10px;}
+							strong{
+								display: inline-block; width: 15px; height: 15px; border-radius: 50%;
+								text-indent: -99999px;
+								&.pf_bg1{background: #e6e2dd;}
+								&.pf_bg2{background: #303030;}
+								&.pf_bg4{background: #D1AC8F;}
+								&.pf_bg5{background: #101820;}
+							}
 						}
 					}
+				}	
+			}
+		}
+
+		// slide4 - Others
+		.others .inner{
+			display: flex; justify-content: space-between;
+			background: transparent;
+			.etc{
+				width: 30%; height: 100%;
+				display: flex; flex-direction: column; justify-content: space-between;
+				padding: 20px 10px; background: #fff;
+				.txt{
+					width: 100%; height: 80%; overflow: auto;
+					display: flex; flex-direction: column; justify-content: space-between;
+					article{
+						h1{ font: 700 20px/1 'Noto Serif KR'; margin-bottom: 10px; text-align: center; }
+						h2{ font: 700 16px/1 'Noto Serif KR'; margin-bottom: 10px; }
+						p{font: 400 14px/1.6 'Noto Serif KR'; margin-bottom: 10px; }
+						strong{font: 400 14px/1.6 'Noto Serif KR'; margin-bottom: 20px; display: block; text-align: center;}
+						ul{
+							margin-bottom: 10px;
+							li{
+								padding: 2px 0; font: 400 14px/1.6 'Noto Serif KR';
+								i{margin-right: 10px;}
+							}
+						}
+						a{
+							display: inline-block; padding: 5px 2px;margin-bottom: 30px;
+							font: 700 14px/1 'Cinzel'; border-top: 2px solid $bg; border-bottom: 2px solid $bg;
+							color: $bg; 
+							i {margin-right: 10px;}
+						}
+					}
+
+					span{
+						color: #ccc; padding: 0;
+					}
 				}
-				.guide{
-					display: inline-block; padding: 5px 2px;margin-bottom: 10px;
-					font: 700 14px/1 'Cinzel'; border-top: 2px solid $bg; border-bottom: 2px solid $bg;
-					color: $bg; 
-					i {margin-right: 10px;}
+				.pic{
+					width: 100%; height: 20%; background: #fff;
+					img{width: 100%;  object-fit: cover; }
 				}
 			}
 		}
 
-		// 네번째
+		//  slide5 - Contact
 		.contact .inner{
 			padding: 80px 100px;
 			display: flex; flex-direction: column; justify-content: center;
@@ -305,7 +320,7 @@ $linegold: #eebe7b;
 	}
 
 	.swiper-pagination {
-		position: absolute; z-index: 1;
+		position: absolute; height: 100px;
 		left: auto;
 		width: 60vw;
 		right: 0;
