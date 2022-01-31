@@ -268,7 +268,7 @@ a {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        padding: 20px 10px;
+        padding: 20px 30px;
         background: #fff; }
         #wrap .swiper-wrapper .others .inner .etc .txt {
           width: 100%;
